@@ -5,4 +5,9 @@
 
   :main quilltest.balls
 
-  :warn-on-reflection true)
+  ;; :warn-on-reflection true
+  ;; DEPRECATED: https://github.com/technomancy/leiningen/blob/master/sample.project.clj
+  
+  :global-vars {*warn-on-reflection* true}
+  
+  )
