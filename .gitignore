@@ -1,8 +1,17 @@
-/pom.xml
-*jar
-/lib
-/classes
-/native
-/.lein-failures
-/checkouts
-/.lein-deps-sum
+# Taken from Github recommended gitignore file for Leiningen.
+# https://raw.githubusercontent.com/github/gitignore/master/Leiningen.gitignore
+# https://github.com/github/gitignore/blob/master/Leiningen.gitignore
+
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/lib/
+/classes/
+/target/
+/checkouts/
+.lein-deps-sum
+.lein-repl-history
+.lein-plugins/
+.lein-failures
+.nrepl-port
