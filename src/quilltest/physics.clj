@@ -55,14 +55,8 @@
   (let [v1 (:velocity r1)
         v2 (:velocity r2)
         x1 (:position r1)
-        x2 (:position r2)
-        
-        
-        ]
+        x2 (:position r2)]
     (with-math (neg? (* (- x1 x2) (- v1 v2))))))
-
-
-
 
 
 (defn distance [r1 r2]
