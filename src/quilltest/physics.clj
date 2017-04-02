@@ -64,14 +64,12 @@
           x2 (:position r2)
           [x1 y1] [(:x x1) (:y x1)]
           [x2 y2] [(:x x2) (:y x2)]
-          [dx dy] [(- x1 x2) (- y1 y2)]
-          distance (Math/sqrt (+ (* dy dy) (* dx dx)))]
-      distance))
+          [dx dy] [(- x1 x2) (- y1 y2)]]
+      (Math/sqrt (+ (* dy dy) (* dx dx)))))
 
 
 (defn colliding? [r1 r2]
   (and (approaching r1 r2)
-    
       (< (distance r1 r2) 20)))
 
 (defn collide
