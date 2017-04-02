@@ -50,19 +50,20 @@
 
 (defrecord RigidBody [mass position velocity])
 
-#_(defn approaching [r1 r2]
-  (let [v1 (:velocity r1)
-        v2 (:velocity r2)]
-    (with-math (neg? (* v1 v2)))))
-    
 
-(def time-scale 0.00001)
 (defn approaching [r1 r2]
-  (let [t (* time-scale 1)
-  distance-ini (distance r1 r2)
-  distance-fin (distance r1-t r2-t)
-  ]
-  (< distance-fin distance-ini)))
+  (let [v1 (:velocity r1)
+        v2 (:velocity r2)
+        x1 (:position r1)
+        x2 (:position r2)
+        
+        
+        ]
+    (with-math (neg? (* (- x1 x2) (- v1 v2))))))
+
+
+
+
 
 (defn distance [r1 r2]
     (let [x1 (:position r1)
