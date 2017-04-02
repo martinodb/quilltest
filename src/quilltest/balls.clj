@@ -23,7 +23,7 @@
       (atom
        (map (fn [id]
               {:pos (px)
-               :velocity [0.001 0.001]
+               :velocity [0.01 0.01]
                :id id})
             (range (:balls params))))))
 
